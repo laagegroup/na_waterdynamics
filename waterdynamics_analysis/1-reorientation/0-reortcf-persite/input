@@ -1,0 +1,30 @@
+! input file format
+NAMD
+!name of PSF file
+PSF       
+!name of DCD file
+DCD
+!name of site definition files
+site_definitions_RNA.inp ! file with HB criteria
+
+OH ! vector to follow
+
+D !solutesegname
+
+SPC ! watertype (SPC or TIP)
+
+HW ! atomtype of water H
+
+OW ! atomtype of water O
+
+52602 ! max no. vectors in solvent=2*number of water molecules (for memory allocation)
+
+0    ! icentr (index of atom at centre of protein, or set to 0)
+
+100.0 ! roughcut -- radius of sphere enclosing protein
+
+250 ! dt (in fs) -- HERE : dfr (fs) time between two frames since not in dcd
+
+0   ! restarting simulation ? 0=no, 1=yes
+
+

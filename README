@@ -1,0 +1,20 @@
+This folder contains the codes used to perform the site-resolved analysis of DNA and RNA hydration dynamics. It implements the procedures to perform a site-resolved analysis of hydration dynamics as described initially for proteins in Sterpone et al., JACS, 2012, 134, 4116-4119 and Fogarty & Laage, JPCB, 2013, 118, 7715  
+Extension of the procedure to nucleic acids is described in Duboué-Dijon et al, JACS, 2016, 138, 7610, and Frezza et al., 2024, ChemRXiv: 10.26434/chemrxiv-2024-sv55n
+ 
+Several former members of D. Laage's group have contributed to the code, mainly: Aoife Fogarty, Fabio Sterpone, Guillaume Stirnemann and Elise Duboué-Dijon.
+
+The folder is organized as follows:
+
+- waterdynamics_printdata: contains the main code to assign water molecules to a given biomolecular site, and to identify their H-bond acceptor. Prints out all required quantities to allow for a posteriori calculation of jump and reorientation times.
+
+- waterdynamics_analysis: in different folders we share the codes used to calculate site-resolved reorientation times, jump times and TSEV factors.
+	 1-reorientation: 
+		0-reortcf-persite: calculates reorientation TCF for each site
+		1-integtime_reor : performs the integration
+
+	2-jump:
+		0-jumptcf-persite: calculates jump TCF for each site
+		1-integtime_jump: performs the integration
+
+	3-TSEV:
+		1-calc-avg-allsites: calculates the average TSEV factor at each NA site 

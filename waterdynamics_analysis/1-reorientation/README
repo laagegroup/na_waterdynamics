@@ -1,0 +1,4 @@
+
+0-reortcf-persite : contains the code that calculates the reorientation TCF associated with each NA site
+1-integtime_reor : integration (and extrapolation at long time) of the TCF to calculate the integrated reorientation time.
+

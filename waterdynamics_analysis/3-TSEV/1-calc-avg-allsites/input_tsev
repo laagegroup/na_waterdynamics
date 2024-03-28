@@ -1,0 +1,11 @@
+!excluded volume file
+exclvolfile_RNA.inp
+!r_ts (A)
+3.5
+!theta_ts (degrees)
+68.0  
+!nbins for tsev calc
+200
+!tdecorr for tsev calc (ps)
+1  
+

@@ -1,0 +1,35 @@
+* Main program file *
+*reads trajectories, calculates all info about water site location and identifies H-bond acceptors if in the shell or if sollowed for JCF/reor calculation
+
+main.f90 
+
+Corresponding makefile creates executable ../print_acc_restart
+
+* Usage *
+./print_acc_restart > out.log
+
+* Other input files *
+input
+psf file 
+dcd file 
+site_definitions.inp (surface sites and H-bond criteria) 
+
+* Output *
+site_t.out 
+state_t.out
+hbacc_t.out
+restartnt0
+
+site_details.out (list of all sites, corresponding atom indices, atomtype, resname, sitetype)
+calc_details.out
+
+* Modules *
+declarations.f90 (declaration of all global variables)
+calc.f90 (calculating distances, angles etc.)
+input_output.f90
+sys_def.f90 (system definition - defining sites, assigning OH to sites, checking if OH fulfills steady state criteria, assigning OH to certain groovewidth etc.)
+types.f90 (Fortran type definitions)
+
+* Numerical recipe files *
+condition.f, fit.f, gammln.f, gammq.f, gcf.f, gser.f 
+
